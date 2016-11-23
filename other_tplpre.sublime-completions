@@ -1,0 +1,36 @@
+{
+    "scope": "source.tplpre",
+
+    "completions": [
+        { "trigger": "debug \tlog", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:log\\.)/}debug(\"${1:message}\");" },
+        { "trigger": "info \tlog", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:log\\.)/}info(\"${1:message}\");" },
+        { "trigger": "warn \tlog", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:log\\.)/}warn(\"${1:message}\");" },
+        { "trigger": "error \tlog", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:log\\.)/}error(\"${1:message}\");" },
+        { "trigger": "critical \tlog", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:log\\.)/}critical(\"${1:message}\");" },
+
+        { "trigger": "_debug \tsimple", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:log\\.)/}debug(\"DEBUG_RUN: -----------> ${1:message} on line:$TM_LINE_NUMBER\");" },
+        { "trigger": "_debug \t%variable%", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:log\\.)/}debug(\"DEBUG_RUN: -----------> ${1:message} %${2:variable}% - ${4:message} on line:$TM_LINE_NUMBER\");" },
+        { "trigger": "_debug \t%node.attrs%", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:log\\.)/}debug(\"DEBUG_RUN: -----------> ${1:message} %${2:host}.${3:name}% - ${4:message} on line:$TM_LINE_NUMBER\");" },
+        { "trigger": "_debug \t%node.attrs% Exec", "contents": "delta_time_tics := time.toTicks(time.current()) - time.toTicks(start_time);\n${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:log\\.)/}debug(\"DEBUG_RUN: -----------> ${1:message} %${2:host}.${3:name}% - ${4:message} on line:$TM_LINE_NUMBER Execution time:\" + number.toText(delta_time_tics/10000) + \"ms\");" },
+
+        { "trigger": "_info \tlog SI", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:log\\.)/}info(\"%host.name%: SI created for %${1:si_type}%);" },
+
+        { "trigger": "regex \textract Var", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:regex\\.)/}extract(${1:variable}, regex \"${2:regex_raw}\", raw '\\1');" },
+        { "trigger": "regex \textract node.attrs", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:regex\\.)/}extract(${1:node}.${2:attrs}, regex \"${3:regex_raw}\", raw '\\1');" },
+        { "trigger": "regex \textract raw 1,2", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:regex\\.)/}extract(${1:variable}, regex \"${2:regex_raw}\", raw '\\\\${3:1}', raw '\\\\${4:2}');" },
+
+        { "trigger": "xpath \tevaluate", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:xpath\\.)/}evaluate(${1:some_file}.content, raw \"${2:xpath_exec}\");" },
+        { "trigger": "xpath \topenDocument", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:xpath\\.)/}openDocument(${1:some_file}.content);" },
+        { "trigger": "xpath \tcloseDocument", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:xpath\\.)/}closeDocument(${1:some_file});" },
+
+        { "trigger": "detailContainer \t_related", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:related\\.)/}detailContainer(${1:node});" },
+        { "trigger": "hostingNode \t_related", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:related\\.)/}hostingNode(\"${1:Cluster}\", type := \"${2:SQL Server}\", properties := ${3:required_properties});" },
+        { "trigger": "_related_host  \t_related", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:related\\.)/}host(${1:node});" },
+
+        { "trigger": "_regex \tSimple Identifiers", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:regex )/}\"${1:regex}\" -> \"${2:product_name}\";" },
+        { "trigger": "_windows_cmd \tSimple Identifiers", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:windows_cmd )/}\"${1:windows_cmd}\" -> \"${2:product_name}\";" },
+        { "trigger": "_unix_cmd \tSimple Identifiers", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:unix_cmd )/}\"${1:unix_cmd}\" -> \"${2:product_name}\";" },
+
+        { "trigger": "_os_class \thost.os_class", "contents": "if host.os_class = \"Windows\" then\n\tsep := '\\\\\\';\nelse\n\tsep := '/';\nend if;\n" }
+    ]
+}

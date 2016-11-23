@@ -1,0 +1,17 @@
+{
+    "scope": "source.tplpre",
+
+    "completions": [
+
+        { "trigger": "oracle_ora_file_parser \tOLD _rdbms_functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:rdbms_functions\\.)/}oracle_ora_file_parser(${1:section_name}, ${2:oracle_ora_file_content});" },
+        { "trigger": "perform_rdbms_sis_search \tOLD _rdbms_functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:rdbms_functions\\.)/}perform_rdbms_sis_search(${1:related_sis_raw}, ${2:rel_si_type}, ${3:instance}, ${4:port}, ${5:db_name}, ${6:extended});" },
+        { "trigger": "related_rdbms_sis_search \tOLD _rdbms_functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:rdbms_functions\\.)/}related_rdbms_sis_search(${1:host}, ${2:rel_host_address}, ${3:rel_si_type}, ${4:instance}, ${5:port}, ${6:db_name}, ${7:extended});" },
+        { "trigger": "related_rdbms_sis_search_extended \tOLD _rdbms_functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:rdbms_functions\\.)/}related_rdbms_sis_search_extended(${1:host}, ${2:rel_host_address}, ${3:rel_si_type}, ${4:instance}, ${5:port}, ${6:db_name}, ${7:extended});" },
+        { "trigger": "oracle_net_service_name_search \tOLD _rdbms_functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:rdbms_functions\\.)/}oracle_net_service_name_search(${1:host}, ${2:net_service_name}, ${3:tnsnames_file_full_location});" },
+        { "trigger": "dsn_rdbms_servers \tOLD _rdbms_functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:rdbms_functions\\.)/}dsn_rdbms_servers(${1:host}, ${2:dsn_name});" },
+        { "trigger": "parseJDBC \tOLD _rdbms_functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:rdbms_functions\\.)/}parseJDBC(${1:url});" },
+        { "trigger": "jdbc_search \tOLD _rdbms_functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:rdbms_functions\\.)/}jdbc_search(${1:host}, ${2:jdbc_url});" },
+        { "trigger": "find_db_server \tOLD _rdbms_functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:rdbms_functions\\.)/}find_db_server(${1:host}, ${2:server_address}, ${3:port}, ${4:si_type}, ${5:db_details});" }
+
+    ]
+}

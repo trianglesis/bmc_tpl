@@ -1,0 +1,22 @@
+{
+	"color_scheme": "Packages/Color Scheme - Default/Monokai Bright.tmTheme",
+	"font_size": 10,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"ignored_words":
+	[
+		"Nagios",
+		"bcom",
+		"bin/nagios",
+		"bjava",
+		"exe",
+		"grep",
+		"inetd/xinetd",
+		"nagiosxi",
+		"nrpe",
+		"reposerver",
+		"wm"
+	]
+}

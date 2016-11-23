@@ -1,0 +1,26 @@
+{
+    "scope": "source.tplpre",
+
+    "completions": [
+
+        { "trigger": "lower \ttext", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:text\\.)/}lower(string)" },
+        { "trigger": "upper \ttext", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:text\\.)/}upper(string)" },
+        { "trigger": "toNumber \ttext", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:text\\.)/}toNumber(port);" },
+
+        { "trigger": "replace \ttext", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:text\\.)/}replace(${1:string}, \"${2:char}\", \"${3:char}\");" },
+        { "trigger": "replace \t , to .", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:text\\.)/}replace(${1:string}, \",\", \".\");" },
+        { "trigger": "replace \t - to .", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:text\\.)/}replace(${1:string}, \"-\", \".\");" },
+        { "trigger": "replace \t \\\\ to \\\\\\\\", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:text\\.)/}replace(${1:string}, \"\\\\\\\", \"\\\\\\\\\\\\\\\");" },
+
+        { "trigger": "join \ttext", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:text\\.)/}join(${1:list}, \"${2:separator}\");" },
+        { "trigger": "split \ttext", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:text\\.)/}split(${1:string}, \"${2:sumbol}\");" },
+        { "trigger": "strip \ttext", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:text\\.)/}strip(${1:string});" },
+        { "trigger": "leftStrip \ttext", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:text\\.)/}leftStrip(${1:string} [, ${2:characters} ] );" },
+        { "trigger": "rightStrip \ttext", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:text\\.)/}rightStrip(${1:string} [, ${2:characters} ] );" },
+        { "trigger": "hash \ttext", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:text\\.)/}hash(${1:string});" },
+        { "trigger": "ordinal \ttext", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:text\\.)/}ordinal(${1:string});" },
+
+        { "trigger": "append \tlist", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:list\\.)/}append(${1:string}, ${2:string});" }
+
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "scope": "source.tplpre",
+
+    "completions": [
+
+        { "trigger": "toChar \tnumber", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:number\\.)/}toChar(${1:number});" },
+        { "trigger": "toText \tnumber", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:number\\.)/}toText(${1:number});" },
+        { "trigger": "range \tnumber", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:number\\.)/}range(${1:number});" }
+    ]
+}

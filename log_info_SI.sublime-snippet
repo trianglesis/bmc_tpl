@@ -1,0 +1,7 @@
+<snippet>
+ <content><![CDATA[log.info("%host.name%: SI created for %si_type%");]]>
+ </content>
+    <!-- <tabTrigger>ONE</tabTrigger> -->
+    <scope>source.tplpre</scope>
+    <description>log.debug</description>
+</snippet>

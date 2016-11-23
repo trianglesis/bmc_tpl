@@ -1,0 +1,17 @@
+{
+    "scope": "source.tplpre",
+
+    "completions": [
+
+        { "trigger": "_regex \tfull ver (\\d+(?:\\.\\d+)*)", "contents": "(\\d+(?:\\.\\d+)*)" },
+        { "trigger": "_regex \tfull ver ^(\\d+(?:\\.\\d+)?)", "contents": "^(\\d+(?:\\.\\d+)?)" },
+        { "trigger": "_regex \tproduct ver (\\d+(?:\\.\\d+)?)", "contents": "(\\d+(?:\\.\\d+)?)" },
+        { "trigger": "_regex \tbjavaw (?i)\\bjavaw?(?:\\.exe)\\$", "contents": "(?i)\\bjavaw?(?:\\.exe)\\$" },
+        { "trigger": "_regex \tbjava (?i)\\bjava(?:\\.exe)?\\$", "contents": "(?i)\\bjava(?:\\.exe)?\\$" },
+        { "trigger": "_regex \tjava (?i)^(\\w:.*\\)Java\\", "contents": "(?i)^(\\w:.*\\)Java\\" },
+        { "trigger": "_regex \tjava (/\\.+/)java/", "contents": "^(/\\.+/)java/" },
+        { "trigger": "_regex \tver ^(\\d+)", "contents": "^(\\d+)" },
+        { "trigger": "_regex \tver ^\\d+\\$", "contents": "^\\d+\\$" }
+
+    ]
+}

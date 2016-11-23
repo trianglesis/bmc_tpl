@@ -1,0 +1,15 @@
+{
+    "scope": "source.tplpre",
+
+    "completions": [
+
+        { "trigger": "toHexString \tbinary", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:binary\\.)/}toHexString(${1:value});" },
+        { "trigger": "toIPv4 \tbinary", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:binary\\.)/}toIPv4(${1:value});" },
+        { "trigger": "toIPv4z \tbinary", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:binary\\.)/}toIPv4z(${1:value});" },
+        { "trigger": "toIPv6 \tbinary", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:binary\\.)/}toIPv6(${1:value});" },
+        { "trigger": "toIPv6z \tbinary", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:binary\\.)/}toIPv6z(${1:value});" },
+        { "trigger": "toMACAddress \tbinary", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:binary\\.)/}toMACAddress(${1:value});" },
+        { "trigger": "toValue \tbinary", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:binary\\.)/}toValue(${1:data}, ${2:format});" },
+        { "trigger": "toWWN \tbinary", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:binary\\.)/}toWWN(${1:value});" }
+    ]
+}

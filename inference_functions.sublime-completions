@@ -1,0 +1,13 @@
+{
+    "scope": "source.tplpre",
+
+    "completions": [
+
+        { "trigger": "associate \tinference", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:inference\\.)/}associate(${1:inferred_node}, ${2:associate});" },
+        { "trigger": "contributor \tinference", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:inference\\.)/}contributor(${1:inferred_node}, ${2:contributor}, ${3:contributes});" },
+        { "trigger": "primary \tinference", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:inference\\.)/}primary(${1:inferred_node}, ${2:primary});" },
+        { "trigger": "relation \tinference", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:inference\\.)/}relation(${1:inferred_relationship}, ${2:source});" },
+        { "trigger": "withdrawal \tinference", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:inference\\.)/}withdrawal(${1:inferred_node}, ${2:evidence}, ${3:withdrawn});" },
+        { "trigger": "destruction \tinference", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:inference\\.)/}destruction(${1:destroyed_node}, ${2:source};)" }
+    ]
+}

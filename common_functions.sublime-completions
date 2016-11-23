@@ -1,0 +1,34 @@
+{
+    "scope": "source.tplpre",
+
+    "completions": [
+        { "trigger": "validate_host_address_format \tOLD _functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:functions\\.)/}validate_host_address_format(${1:rel_host_address});" },
+        { "trigger": "domain_lookup \tOLD _functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:functions\\.)/}domain_lookup(${1:host}, ${2:rel_host_address_domain});" },
+        { "trigger": "identify_host_perform_search \tOLD _functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:functions\\.)/}identify_host_perform_search(${1:host}, ${2:rel_host_address});" },
+        { "trigger": "identify_host_perform_search_in_scope \tOLD _functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:functions\\.)/}identify_host_perform_search_in_scope(${1:host}, ${2:rel_host_address}, ${3:hosts_scope});" },
+        { "trigger": "identify_host \tOLD _functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:functions\\.)/}identify_host(${1:host}, ${2:rel_host_address}, ${3:extended});" },
+        { "trigger": "identify_host_extended \tOLD _functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:functions\\.)/}identify_host_extended(${1:host}, ${2:rel_host_address}, ${3:extended});" },
+        { "trigger": "related_sis_search \tOLD _functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:functions\\.)/}related_sis_search(${1:host}, ${2:rel_host_address}, ${3:rel_si_type});" },
+        { "trigger": "related_sis_search_on_multiple_hosts \tOLD _functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:functions\\.)/}related_sis_search_on_multiple_hosts(${1:host}, ${2:rel_host_addresses}, ${3:rel_si_type});" },
+        { "trigger": "related_sis_search_on_multiple_hosts_extended \tOLD _functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:functions\\.)/}related_sis_search_on_multiple_hosts_extended(${1:host}, ${2:rel_host_addresses}, ${3:rel_si_type});" },
+        { "trigger": "related_sis_search_extended \tOLD _functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:functions\\.)/}related_sis_search_extended(${1:host}, ${2:rel_host_address}, ${3:rel_si_type}, ${4:extended})," },
+        { "trigger": "related_si_types_search \tOLD _functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:functions\\.)/}related_si_types_search(${1:host}, ${2:rel_host_address}, ${3:rel_si_types});" },
+        { "trigger": "path_normalization \tOLD _functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:functions\\.)/}path_normalization(${1:host}, ${2:install_root});" },
+        { "trigger": "links_management \tOLD _functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:functions\\.)/}links_management(${1:si_node}, ${2:recently_found_sis}, ${3:related_si_type});" },
+        { "trigger": "get_cleanedup_path \tOLD _functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:functions\\.)/}get_cleanedup_path(${1:path}, ${2:os});" },
+        { "trigger": "get_max_version \tOLD _functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:functions\\.)/}get_max_version(${1:ver1}, ${2:ver2});" },
+        { "trigger": "get_exe_cwd_path \tOLD _functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:functions\\.)/}get_exe_cwd_path(${1:process}, ${2:expected_binary_name});" },
+        { "trigger": "sort_list \tOLD _functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:functions\\.)/}sort_list(${1:list});" },
+        { "trigger": "run_priv_cmd \tOLD _functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:functions\\.)/}run_priv_cmd(${1:host}, ${2:command}, priv_cmd := 'PRIV_RUNCMD');" },
+        { "trigger": "has_process \tOLD _functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:functions\\.)/}has_process(${1:host}, ${2:command});" },
+        { "trigger": "isValidSerialNumber \tOLD _functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:functions\\.)/}isValidSerialNumber(${1:serial});" },
+        { "trigger": "convertToCharString \tOLD _functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:functions\\.)/}convertToCharString(${1:ascii_codes});" },
+        { "trigger": "wmiFollowAssociations \tOLD _functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:functions\\.)/}wmiFollowAssociations(${1:host}, ${2:namespace}, ${3:initial_paths}, ${4:associations});" },
+        { "trigger": "checkForDecimal \tOLD _functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:functions\\.)/}checkForDecimal(${1:value}, ${2:bValue});" },
+        { "trigger": "convertToBytes \tOLD _functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:functions\\.)/}convertToBytes(${1:value}, ${2:gib});" },
+        { "trigger": "identify_host_with_uuid \tOLD _functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:functions\\.)/}identify_host_with_uuid(${1:uuid});" },
+        { "trigger": "locateCommands \tOLD _functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:functions\\.)/}locateCommands(${1:host}, ${2:command_list});" },
+        { "trigger": "find_server \tOLD _functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:functions\\.)/}find_server(${1:host}, ${2:server_address}, ${3:port}, ${4:si_type}, alt_types := ${5:none}, all := ${6:false});" },
+        { "trigger": "checkCommandList \tOLD _functions", "contents": "${TM_CURRENT_WORD/\\.\\W*|(.*)/(?1:functions\\.)/}checkCommandList(${1:host}, ${2:command_list});" }
+    ]
+}
