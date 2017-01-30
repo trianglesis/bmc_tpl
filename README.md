@@ -1,6 +1,5 @@
 tpl - tplpre syntax package for Sublime Text 2\3
 =====================================
-# bmc_tpl
 This is a syntax highlight for BMC tpl
 
 Pattern for product discovery: http://www.bmc.com/it-solutions/discovery-dependency-mapping.html
