@@ -1,3 +1,4 @@
+(OLD) Left it here just for ed. purposes.
 tpl - tplpre syntax package for Sublime Text 2\3
 =====================================
 This is a syntax highlight for BMC tpl
