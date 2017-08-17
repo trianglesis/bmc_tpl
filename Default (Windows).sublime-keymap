@@ -1,0 +1,11 @@
+// THIS IS RECOMMENDED TEMPLATE
+// Use as example for your settings set
+// This file should be in : C:\Users\USER\AppData\Roaming\Sublime Text 3\Packages\User\
+[
+    {"keys": ["ctrl+shift+."], "command": "tku_date" },
+    {"keys": ["ctrl+shift+,"], "command": "tku_time" },
+    {"keys": ["ctrl+alt+d"], "command": "insert_snippet", "args": {"name": "Packages/bmc_tplpre/log_debug.sublime-snippet"} },
+    {"keys": ["ctrl+alt+s"], "command": "insert_snippet", "args": {"name": "Packages/bmc_tplpre/log_info_SI.sublime-snippet"} },
+    {"keys": ["ctrl+shift+t"], "command": "open_recent_file", "args": {"index" : 0} },
+    {"keys": ["ctrl+shift+t"], "command": "delete_trailing_spaces" }
+]

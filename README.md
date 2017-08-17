@@ -1,12 +1,13 @@
-(OLD) Left it here just for ed. purposes.
-tpl - tplpre syntax package for Sublime Text 2\3
-=====================================
-This is a syntax highlight for BMC tpl
+# BMC tpl\\tplpre language support in Sublime Text 2\\3
 
-Pattern for product discovery: http://www.bmc.com/it-solutions/discovery-dependency-mapping.html
-And: https://discovery.bmc.com/
+Adds syntax highlighting and snippets for [tpl](https://docs.bmc.com/docs/display/DISCO111/The+Pattern+Language+TPL) in Sublime Text.
 
-This package is created to highlight patterns syntax for ADDM and autocomplete all functions with examples.
-Can be usefull to create a custom patterns with readable structure or edit and update current.
+Originally made. Have also re-made version for [Atom](https://github.com/triaglesis/language-tplpre)
 
-Also will include atomate system to upload and activate pattern into ADDM (BMC Discovery) and start discovery and run some tests.
+Build Logic for this package is not included, you can find it in separate [repo](https://github.com/triaglesis/BMC_TPL_IDE)
+
+Contributions are greatly appreciated. Please fork this repository and open a pull request to add snippets, make grammar tweaks, etc.
+
+### Additional functionality will be added soon in both versions for Sublime Text and Atom.
+
+Fell free to contact me via it@trianglesis.org.ua

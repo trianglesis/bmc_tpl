@@ -1,3 +1,12 @@
+// # This is build system template.
+// # Build Logic for this package is not included, you can find it in separate [repo](https://github.com/triaglesis/BMC_TPL_IDE)
+// # File formatten in YML type.
+// # More info: https://github.com/noseglid/atom-build#specify-a-custom-build-command
+// # Additional build options listed here:
+// # -disco_mode playback | record | standard
+// # -host_list - list of host IP sep by comma
+// # -l info | quiet | warn | debug | output | error
+// # Run TPLPreprocessor on current file:
 {
     "selector": "source.tplpre",
     "cmd": ["C:\\Python27\\python.exe", "$packages\\bmc_tplpre\\TPLPreprocessor.py", "-q", "-f", "$file"],
@@ -42,32 +51,32 @@
         },
 
         // Run TPLPreprocessor after tpl Syntax check and upload pattern folder to ADDM
-        { "name": "upload 10 192.168.5.8 tpl 11.0 (folder)",
+        { "name": "upload 10 ADDM_IP tpl 11.0 (folder)",
           "cmd": ["C:\\Python34\\python.exe", "$packages\\bmc_tplpre\\check.py",
                   "-wd", "$file_path",
                   "-tpl", "11.0",
-                  "-addm", "192.168.5.8",
+                  "-addm", "ADDM_IP",
                   "-u", "root", "-p", "local_R00T",
                   "-l", "info"]
         },
 
         // Run TPLPreprocessor after tpl Syntax check and upload current pattern to ADDM
-        { "name": "upload 10 192.168.5.8 tpl 11.0 (pattern)",
+        { "name": "upload 10 ADDM_IP tpl 11.0 (pattern)",
           "cmd": ["C:\\Python34\\python.exe", "$packages\\bmc_tplpre\\check.py",
                   "-wd", "$file_path",
                   "-full_path", "$file",
                   "-tpl", "11.0",
-                  "-addm", "192.168.5.8",
+                  "-addm", "ADDM_IP",
                   "-u", "root", "-p", "local_R00T",
                   "-l", "info"]
         },
 
         // Run TPLPreprocessor after tpl Syntax check and upload pattern folder to ADDM and run Scan in playback
-        { "name": "play 10 192.168.5.8 tpl 11.0 Playback (folder)",
+        { "name": "play 10 ADDM_IP tpl 11.0 Playback (folder)",
           "cmd": ["C:\\Python34\\python.exe", "$packages\\bmc_tplpre\\check.py",
                   "-wd", "$file_path",
                   "-tpl", "11.0",
-                  "-addm", "192.168.5.8",
+                  "-addm", "ADDM_IP",
                   "-u", "root", "-p", "local_R00T",
                   "-host_list", "0.0.0.0",
                   "-disco_mode", "playback",
@@ -75,12 +84,12 @@
         },
 
         // Run TPLPreprocessor after tpl Syntax check and upload current pattern to ADDM and run Scan in playback
-        { "name": "play 10 192.168.5.8 tpl 11.0 Playback (pattern)",
+        { "name": "play 10 ADDM_IP tpl 11.0 Playback (pattern)",
           "cmd": ["C:\\Python34\\python.exe", "$packages\\bmc_tplpre\\check.py",
                   "-wd", "$file_path",
                   "-full_path", "$file",
                   "-tpl", "11.0",
-                  "-addm", "192.168.5.8",
+                  "-addm", "ADDM_IP",
                   "-u", "root", "-p", "local_R00T",
                   "-host_list", "0.0.0.0",
                   "-disco_mode", "playback",
@@ -88,11 +97,11 @@
         },
 
         // Run TPLPreprocessor after tpl Syntax check and upload pattern folder to ADDM and run Scan in Record
-        { "name": "rec 10 192.168.5.8 tpl 11.0 Record (folder)",
+        { "name": "rec 10 ADDM_IP tpl 11.0 Record (folder)",
           "cmd": ["C:\\Python34\\python.exe", "$packages\\bmc_tplpre\\check.py",
                   "-wd", "$file_path",
                   "-tpl", "11.0",
-                  "-addm", "192.168.5.8",
+                  "-addm", "ADDM_IP",
                   "-u", "root", "-p", "local_R00T",
                   "-host_list", "0.0.0.0",
                   "-disco_mode", "record",
@@ -100,12 +109,12 @@
         },
 
         // Run TPLPreprocessor after tpl Syntax check and upload current pattern to ADDM and run Scan in Record
-        { "name": "rec 10 192.168.5.8 tpl 11.0 Record (pattern)",
+        { "name": "rec 10 ADDM_IP tpl 11.0 Record (pattern)",
           "cmd": ["C:\\Python34\\python.exe", "$packages\\bmc_tplpre\\check.py",
                   "-wd", "$file_path",
                   "-full_path", "$file",
                   "-tpl", "11.0",
-                  "-addm", "192.168.5.8",
+                  "-addm", "ADDM_IP",
                   "-u", "root", "-p", "local_R00T",
                   "-host_list", "0.0.0.0",
                   "-disco_mode", "record",
@@ -113,11 +122,11 @@
         },
 
         // Run TPLPreprocessor after tpl Syntax check and upload pattern folder to ADDM and run Scan in Discovery
-        { "name": "disco 10 192.168.5.8 tpl 11.0 Discovery (folder)",
+        { "name": "disco 10 ADDM_IP tpl 11.0 Discovery (folder)",
           "cmd": ["C:\\Python34\\python.exe", "$packages\\bmc_tplpre\\check.py",
                   "-wd", "$file_path",
                   "-tpl", "11.0",
-                  "-addm", "192.168.5.8",
+                  "-addm", "ADDM_IP",
                   "-u", "root", "-p", "local_R00T",
                   "-host_list", "0.0.0.0",
                   "-disco_mode", "standard",
@@ -125,12 +134,12 @@
         },
 
         // Run TPLPreprocessor after tpl Syntax check and upload current pattern to ADDM and run Scan in Discovery
-        { "name": "disco 10 192.168.5.8 tpl 11.0 Discovery (pattern)",
+        { "name": "disco 10 ADDM_IP tpl 11.0 Discovery (pattern)",
           "cmd": ["C:\\Python34\\python.exe", "$packages\\bmc_tplpre\\check.py",
                   "-wd", "$file_path",
                   "-full_path", "$file",
                   "-tpl", "11.0",
-                  "-addm", "192.168.5.8",
+                  "-addm", "ADDM_IP",
                   "-u", "root", "-p", "local_R00T",
                   "-host_list", "0.0.0.0",
                   "-disco_mode", "standard",
@@ -138,32 +147,32 @@
         },
 
         // Run TPLPreprocessor after tpl Syntax check and upload pattern folder to ADDM
-        { "name": "upload 11 192.168.5.6 tpl 11.1 (folder)",
+        { "name": "upload 11 ADDM_IP tpl 11.1 (folder)",
           "cmd": ["C:\\Python34\\python.exe", "$packages\\bmc_tplpre\\check.py",
                   "-wd", "$file_path",
                   "-tpl", "11.1",
-                  "-addm", "192.168.5.6",
+                  "-addm", "ADDM_IP",
                   "-u", "root", "-p", "local_R00T",
                   "-l", "info"]
         },
 
         // Run TPLPreprocessor after tpl Syntax check and upload current pattern to ADDM
-        { "name": "upload 11 192.168.5.6 tpl 11.1 (pattern)",
+        { "name": "upload 11 ADDM_IP tpl 11.1 (pattern)",
           "cmd": ["C:\\Python34\\python.exe", "$packages\\bmc_tplpre\\check.py",
                   "-wd", "$file_path",
                   "-full_path", "$file",
                   "-tpl", "11.1",
-                  "-addm", "192.168.5.6",
+                  "-addm", "ADDM_IP",
                   "-u", "root", "-p", "local_R00T",
                   "-l", "info"]
         },
 
         // Run TPLPreprocessor after tpl Syntax check and upload pattern folder to ADDM and run Scan in playback
-        { "name": "play 11 192.168.5.6 tpl 11.1 Playback (folder)",
+        { "name": "play 11 ADDM_IP tpl 11.1 Playback (folder)",
           "cmd": ["C:\\Python34\\python.exe", "$packages\\bmc_tplpre\\check.py",
                   "-wd", "$file_path",
                   "-tpl", "11.1",
-                  "-addm", "192.168.5.6",
+                  "-addm", "ADDM_IP",
                   "-u", "root", "-p", "local_R00T",
                   "-host_list", "0.0.0.0",
                   "-disco_mode", "playback",
@@ -171,12 +180,12 @@
         },
 
         // Run TPLPreprocessor after tpl Syntax check and upload current pattern to ADDM and run Scan in playback
-        { "name": "play 11 192.168.5.6 tpl 11.1 Playback (pattern)",
+        { "name": "play 11 ADDM_IP tpl 11.1 Playback (pattern)",
           "cmd": ["C:\\Python34\\python.exe", "$packages\\bmc_tplpre\\check.py",
                   "-wd", "$file_path",
                   "-full_path", "$file",
                   "-tpl", "11.1",
-                  "-addm", "192.168.5.6",
+                  "-addm", "ADDM_IP",
                   "-u", "root", "-p", "local_R00T",
                   "-host_list", "0.0.0.0",
                   "-disco_mode", "playback",
@@ -184,11 +193,11 @@
         },
 
         // Run TPLPreprocessor after tpl Syntax check and upload pattern folder to ADDM and run Scan in Record
-        { "name": "rec 11 192.168.5.6 tpl 11.1 Record (folder)",
+        { "name": "rec 11 ADDM_IP tpl 11.1 Record (folder)",
           "cmd": ["C:\\Python34\\python.exe", "$packages\\bmc_tplpre\\check.py",
                   "-wd", "$file_path",
                   "-tpl", "11.1",
-                  "-addm", "192.168.5.6",
+                  "-addm", "ADDM_IP",
                   "-u", "root", "-p", "local_R00T",
                   "-host_list", "0.0.0.0",
                   "-disco_mode", "record",
@@ -196,12 +205,12 @@
         },
 
         // Run TPLPreprocessor after tpl Syntax check and upload current pattern to ADDM and run Scan in Record
-        { "name": "rec 11 192.168.5.6 tpl 11.1 Record (pattern)",
+        { "name": "rec 11 ADDM_IP tpl 11.1 Record (pattern)",
           "cmd": ["C:\\Python34\\python.exe", "$packages\\bmc_tplpre\\check.py",
                   "-wd", "$file_path",
                   "-full_path", "$file",
                   "-tpl", "11.1",
-                  "-addm", "192.168.5.6",
+                  "-addm", "ADDM_IP",
                   "-u", "root", "-p", "local_R00T",
                   "-host_list", "0.0.0.0",
                   "-disco_mode", "record",
@@ -209,11 +218,11 @@
         },
 
         // Run TPLPreprocessor after tpl Syntax check and upload pattern folder to ADDM and run Scan in Discovery
-        { "name": "disco 11 192.168.5.6 tpl 11.1 Discovery (folder)",
+        { "name": "disco 11 ADDM_IP tpl 11.1 Discovery (folder)",
           "cmd": ["C:\\Python34\\python.exe", "$packages\\bmc_tplpre\\check.py",
                   "-wd", "$file_path",
                   "-tpl", "11.1",
-                  "-addm", "192.168.5.6",
+                  "-addm", "ADDM_IP",
                   "-u", "root", "-p", "local_R00T",
                   "-host_list", "0.0.0.0",
                   "-disco_mode", "standard",
@@ -221,12 +230,12 @@
         },
 
         // Run TPLPreprocessor after tpl Syntax check and upload current pattern to ADDM and run Scan in Discovery
-        { "name": "disco 11 192.168.5.6 tpl 11.1 Discovery (pattern)",
+        { "name": "disco 11 ADDM_IP tpl 11.1 Discovery (pattern)",
           "cmd": ["C:\\Python34\\python.exe", "$packages\\bmc_tplpre\\check.py",
                   "-wd", "$file_path",
                   "-full_path", "$file",
                   "-tpl", "11.1",
-                  "-addm", "192.168.5.6",
+                  "-addm", "ADDM_IP",
                   "-u", "root", "-p", "local_R00T",
                   "-host_list", "0.0.0.0",
                   "-disco_mode", "standard",
