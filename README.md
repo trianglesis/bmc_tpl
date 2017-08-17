@@ -33,7 +33,7 @@ This is optional and recommended settings:
 #### Automation, syntax check, upload pattern, etc:
 
 
-With module: [BMC_TPL_IDE](https://github.com/triaglesis/BMC_TPL_IDE) you can most development routines automatically.
+With module: [BMC_TPL_IDE](https://github.com/triaglesis/BMC_TPL_IDE) you can run most development routines automatically.
 For Sublime Text command templates will be available in Command Palette (Ctrl+Shift+P) - [build system](http://sublimetext.info/docs/en/reference/build_systems.html)
 
 
