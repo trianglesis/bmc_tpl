@@ -2,9 +2,9 @@
 
 Adds syntax highlighting and snippets for [tpl](https://docs.bmc.com/docs/display/DISCO111/The+Pattern+Language+TPL) in Sublime Text.
 
-Originally made. Have also re-made version for [Atom](https://github.com/triaglesis/language-tplpre)
+Originally made. Have also re-made version for [Atom](https://github.com/trianglesis/language-tplpre)
 
-Build Logic for this package is not included, you can find it in separate [repo](https://github.com/triaglesis/BMC_TPL_IDE)
+Build Logic for this package is not included, you can find it in separate [repo](https://github.com/trianglesis/BMC_TPL_IDE)
 
 
 ## Installation:
@@ -27,20 +27,20 @@ This is optional and recommended settings:
 
 #### Set syntax: Ctrl+Shift+P -> type "Set Syntax: tplpre"
 
-![set syntax](https://github.com/triaglesis/bmc_tpl/blob/master/Pictures/SetSyntax.png)
+![set syntax](https://github.com/trianglesis/bmc_tpl/blob/master/Pictures/SetSyntax.png)
 
 
 #### Automation, syntax check, upload pattern, etc:
 
 
-With module: [BMC_TPL_IDE](https://github.com/triaglesis/BMC_TPL_IDE) you can run most development routines automatically.
+With module: [BMC_TPL_IDE](https://github.com/trianglesis/BMC_TPL_IDE) you can run most development routines automatically.
 For Sublime Text command templates will be available in Command Palette (Ctrl+Shift+P) - [build system](http://sublimetext.info/docs/en/reference/build_systems.html)
 
 
-![Cammands](https://github.com/triaglesis/bmc_tpl/blob/master/Pictures/Commands.png)
+![Cammands](https://github.com/trianglesis/bmc_tpl/blob/master/Pictures/Commands.png)
 
 
-![Build](https://github.com/triaglesis/bmc_tpl/blob/master/Pictures/BuildSystem.png)
+![Build](https://github.com/trianglesis/bmc_tpl/blob/master/Pictures/BuildSystem.png)
 
 
 
